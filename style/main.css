@@ -1,0 +1,262 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    /* 10px = 1rem*/
+    --bg-color: hsl(40, 6%, 9%);
+    --tx-color: hsla(44, 26%, 77%);
+    --sub-title: hsla(218, 14%, 72%);
+    --yellow:hsla(43, 100%, 60%);
+    --bg-respons: hsla(40, 7%, 13%);
+    --bs-body-bg: hsl(40, 6%, 9%) !important;
+
+
+}
+
+
+
+body{
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    text-align: center;
+    width:100%;
+    height:100%;
+    
+    
+}
+
+
+.container-login {
+    width: min(50rem, 100%);  
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+/*---- HEADER E LOGO ------- */
+
+.logo{
+  width:11.5rem;
+  height:2.8rem;
+  margin-top: 4rem;
+  margin-bottom:3rem;
+}
+
+
+header .content-header{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    width:33.4rem;
+    height: 7.2rem;
+    margin-bottom:2.7rem;
+       
+}
+
+header .content-header .title{
+    width:20.6rem;
+    height:3.6rem;
+    font-family: 'Poppins';
+    font-size: 2.4rem;
+    line-height:3.6rem;
+    color: var(--tx-color);
+}
+
+header .content-header .sub-title{
+    color: var(--sub-title);
+    width:33.4rem;
+    height:2.3rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size:1.6rem;
+    line-height:2.4rem;
+    margin-bottom: 0;
+}
+
+/*---- MAIN ------- */
+
+main form .login{
+    width:25.5rem;
+    height:7.3rem;
+    
+}
+
+main form .form-label{
+    width:5.4rem;
+    height:2.4rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height:2.4rem;
+    color: var(--sub-title);
+
+}
+
+main form .login .form-control{
+    width: 29.5rem;
+    height:3.4rem;
+    border-radius:1rem;
+    font-size: 1.4rem;
+    line-height:1.6rem;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: bold;
+    background-color:var(--bg-color);
+    color:var(--sub-title);
+}
+
+main form .fa-eye{
+    position: relative;
+    left:26rem;
+    bottom:2.3rem;
+    color:var(--sub-title);
+    font-size:1.3rem;
+    cursor: pointer;
+    
+}
+
+main form .form-check{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+main form .form-check-input{
+    width:1.8rem;
+    height:1.8rem;
+    border: 1px solid #868686;
+    background-color:var(--bg-color);
+    border-radius:9rem;
+    cursor: pointer;
+}
+
+main form .form-check-label{
+    width:9.1rem;
+    height:1.5rem;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height:1.9rem;
+    color: var(--sub-title);
+    margin-left:0.8rem;
+    cursor: pointer;
+}
+
+main form .form-check .forgetPassword{
+    width:18.3rem;
+    height:1.5rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height:2.1rem;
+    color:var(--yellow);
+    text-decoration: none;
+    margin-left: 2rem;   
+}
+
+main form .form-check .forgetPassword:hover{
+    color:rgb(254, 254, 24);
+}
+
+main form .btn{
+    width:20.4rem;
+    height:3.8rem;
+    border-radius:0.4rem;
+    margin-top:2rem;
+    font-size: 1.8rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 2.7rem;
+    color: var(--yellow);
+    margin-left: 4rem;
+    outline: none;      
+}
+
+form .register {
+    width:23.5rem;
+    height:2.1rem;
+    font-family: 'Poppins';
+    font-weight:400;
+    font-size:1.4rem;
+    line-height: 2.1rem;
+    margin-top:1.4rem;
+    margin-left:2.8rem;
+    color: var(--yellow);
+}
+
+form .register .linkRegister{
+    text-decoration: none;
+    color: var(--yellow);
+    transition: background 200ms;
+}
+
+form .register .linkRegister:hover{
+    color:rgb(254, 254, 24);
+}
+
+
+
+/*======== IMAGE =============== */
+.page .img-principal{
+    display: none;
+    visibility: hidden;
+}
+
+
+/*======== RESPONSIVE =============== */
+
+@media (min-width: 1024px ){
+    .page .container-login{
+    width: 57.2rem;
+    height: 51.2rem;
+    background: var(--bg-respons);
+    margin-inline: auto; 
+    margin-top: 5rem;      
+}
+
+}
+
+
+@media (min-width: 1355px )  {
+
+    .page{
+    display:flex;
+    justify-content: space-between;
+    }
+
+    .page .container-login{
+   
+    width: 57.2rem;
+    height: 51.2rem;
+    background: var(--bg-respons);
+    margin-inline: auto;
+    margin-top: 19.4rem;
+
+ }
+
+ .page .img-principal{
+    display: initial;
+    visibility: initial;
+     
+}
+
+.page .img-principal img {
+    width: 77.5rem;
+    height:100%;
+}
+
+}
+
+/*======== ERRO NOS INPUT =============== */
+
+.errorInput{
+    border: 2px solid rgb(216, 63, 63) !important;
+}

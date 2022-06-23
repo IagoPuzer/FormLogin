@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&family=Roboto:wght@100;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>FormLogin</title>
+</head>
+
+<body style=" --bs-body-bg: hsl(40, 6%, 9%);">
+    <div class="page">
+        <div class="container-login">
+            <header>
+                <div class="logo">
+                    <img src="./assets/logo.svg" alt="Logomarca do camp.in">
+                </div>
+                <div class="content-header">
+                    <h1 class="title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15"
+                                stroke="#FFC632" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10 17L15 12L10 7" stroke="#FFC632" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M15 12H3" stroke="#FFC632" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Faça seu login
+                    </h1>
+                    <p class="sub-title">
+                        Entre com suas informações de cadastro
+                    </p>
+                </div>
+            </header>
+
+            <main>
+                <form>
+                    <div class="mb-3 login">
+                        <label for="validationCustom05" for="exampleInputEmail1" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Digite seu email">                        
+                    </div>
+
+                    <div class="mb-3 login">
+                        <label for="validationCustom05" for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="Digite sua senha">
+                            <i class="fa-solid fa-eye"></i>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Lembre-me</label>
+                        <a href="#" class="forgetPassword">Esqueci minha senha</a>
+                    </div>
+                    <button type="submit" class="btn btn-outline-warning btn-login" id="btn">Entrar</button>
+                    <h4 class="register">Não tem uma conta? <a href="#" class="linkRegister">Registre-se</a></h4>
+                </form>
+            </main>
+        </div>
+
+        <div class="img-principal">
+            <img  src="./assets/side-image.png" class="img-fluid"  alt="carro na floresta">
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./JS/main.js"></script>
+    <script src="https://kit.fontawesome.com/7733a71695.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
